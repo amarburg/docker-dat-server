@@ -9,5 +9,5 @@ It has one _required_ environment variable:
 If set `FEEDS_FILE` is set, it is the name of the file __within__ `FEEDS_DAT` used to configure
 hypercored.   If not set, defaults to `feeds`.
 
-Stores all data on the volume `/data` ... mount this as a volume if you want
+Stores all data on the volume `/data`.  Mount this as a volume if you want
 data to persist between runs.
