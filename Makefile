@@ -1,7 +1,11 @@
 
+TAG=amarburg/dat-server:latest
+
 
 build:
-	docker build -t amarburg/dat-server:latest .
+	docker build -t ${TAG} .
 
+push:
+	docker push ${TAG}
 
-.PHONY: build
+.PHONY: build push

@@ -8,8 +8,7 @@ if [[ -z "$FEEDS_DAT" ]]; then
 fi
 
 # Start the first process
-dat clone $FEEDS_DAT feeds_dat
-dat sync -d feeds_dat/ &
+dat clone $FEEDS_DAT feeds_dat && dat sync -d feeds_dat/ &
 status=$?
 if [ $status -ne 0 ]; then
   echo "Failed to start my_first_process: $status"
